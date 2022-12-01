@@ -6,12 +6,13 @@
 
         // Assign the variables to the
         $name = $_POST['name'];
+        $tel = $_POST['telephone'];
         $mail = $_POST['email'];
         $msg = $_POST['message'];
 
 
     $headers  = 'From: ' . $mail . '\r\n';
-    $content = 'Client ' . $name . ' ' . $msg ;
+    $content = 'Client ' . $name . ' ' . $tel . ' ' . $msg ;
 
     //the mail function that accept the following parameters [to, subject, header, parameter]
 
